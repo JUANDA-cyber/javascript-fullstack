@@ -1,0 +1,54 @@
+cd javascript-fullstack-simple
+npm run dev // si esta en modo desarrollo
+npm start   // si estan en modo produccion
+
+npx webpack //para que pase los cambios que haga en el front-end y los aplique en la carpeta public del back-end
+
+----------------- Git
+
+cd /Developments/javascript-fullstack-simple //estar en la cerpeta del proyecto
+
+git init
+git add 
+git status -s
+
+git config --global user.email "jguzman65@itfip.edu.co"
+git config --global user.email "JUANDA-cyber"
+
+git commit -m "mensaje"
+
+git push origin 
+git pull 
+--------------------
+
+
+-----------------Frontend--------------------
+WEBPACK
+herramienta que toma los archivos del frontend y los prepara para produccion
+Es un empaquedador de modulos
+
+----- Complementos 
+
+npm i webpack 
+webpack-cli 
+html-webpack-plugin 
+css-loader style-loader 
+mini-css-extract-plugin 
+webpack-dev-server 
+timeago.js -D
+
+se instala como dependencias de desarrollo y no de produccion, igual se instala como el nodemon 
+
+
+npx webpack
+----------------------------------------------------------
+
+
+---------------- mongodb
+
+sudo systemctl status mongod
+sudo systemctl stop mongod
+sudo systemctl start mongod
+sudo systemctl restart mongod
+
+

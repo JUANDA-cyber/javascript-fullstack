@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://javascript-fullstack-simple/./frontend/app.js"],"names":["alert"],"mappings":"AAAAA,MAAM","file":"js/bundle.js","sourcesContent":["alert('todo bien');"],"sourceRoot":""}
