@@ -1,6 +1,10 @@
 cd javascript-fullstack-simple
-npm run dev // si esta en modo desarrollo
 npm start   // si estan en modo produccion
+npm run build //para que arranque con webpack
+
+--para desarrollar
+npm run dev // si esta en modo desarrollo
+npm run serverdev //arranca con un servidor de desarrollo
 
 npx webpack //para que pase los cambios que haga en el front-end y los aplique en la carpeta public del back-end
 
@@ -34,7 +38,7 @@ webpack-cli
 html-webpack-plugin 
 css-loader style-loader 
 mini-css-extract-plugin 
-webpack-dev-server 
+webpack-dev-server         //servidor de desarrollo para webpack, para no estar recargando por cada cambio
 timeago.js -D
 
 se instala como dependencias de desarrollo y no de produccion, igual se instala como el nodemon 
