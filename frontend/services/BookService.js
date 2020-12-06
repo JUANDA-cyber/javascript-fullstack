@@ -1,4 +1,5 @@
 class BookService{
+
     constructor(){
         this.URI = 'http://localhost:3000/api/books';
     }
@@ -19,7 +20,7 @@ class BookService{
     }
 
     async deleteBook(bookId){
-        await fetch(`${this.URI}/${bookId}`,{
+        const res = await fetch(`${this.URI}/${bookId}`,{
             headers: {
                 'Content-Type': 'application/json'
             },

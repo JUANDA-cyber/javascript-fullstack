@@ -1,6 +1,7 @@
 const { Router } = require('express');
-const { findByIdAndDelete } = require('../models/Book');
 const router = Router();
+const { unlink } = require('fs-extra'); //fs modulo de node - crea, busca, mueve, elimina archivos, no soporta promesas solo colbacks, el fs-extra si 
+const path = require('path');
 
 const Book = require('../models/Book');
 
@@ -21,13 +22,10 @@ router.post('/', async  (req, res) => {
 });
 
 // eliminar un libro
-router.delete('/:id', async (req, res) =>{
-    // console.log(req.params.id)
-    await Book.findByIdAndDelete(req.params.id);
-    // console.log(book);
+router.delete('/:id', async (req, res) => {
+    const book = await Book.findByIdAndDelete(req.params.id);
+    unlink(path.resolve('./backend/public' + book.imagePath))
     res.json({message: 'Book Deleted'});
-})
-
-
+});
 
 module.exports = router;
