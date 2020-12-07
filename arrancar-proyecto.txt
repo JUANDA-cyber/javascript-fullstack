@@ -1,13 +1,18 @@
 cd javascript-fullstack-simple
-npm start   // si estan en modo produccion
-npm run build //para que arranque con webpack
+npm start                    // si estan en modo produccion
+npm run build                //para que arranque con webpack
 
 --para desarrollar
-npm run dev // si esta en modo desarrollo
-npm run serverdev //arranca con un servidor de desarrollo
+sudo systemctl start mongod  //activar el servicio de mongo db
+npm run dev                  // si esta en modo desarrollo
+npm run serverdev            //arranca con un servidor de desarrollo
+
 
 npx webpack //para que pase los cambios que haga en el front-end y los aplique en la carpeta public del back-end
 
+----------------
+flatuicolors.com //colores
+bootswatch 4     //como un bootstrap 
 ----------------- Git
 
 cd /Developments/javascript-fullstack-simple //estar en la cerpeta del proyecto

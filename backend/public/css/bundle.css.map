@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://javascript-fullstack-simple/./frontend/styles/app.css"],"names":[],"mappings":"AAAA;IACI,mBAAmB;AACvB,C","file":"css/bundle.css","sourcesContent":["body {\n    background: #dcdde1;\n}"],"sourceRoot":""}
